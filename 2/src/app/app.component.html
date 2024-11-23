@@ -1,0 +1,7 @@
+<app-child
+  [messageFromParent]="parentMessage"
+  (messageToParent)="receiveMessage($event)"
+></app-child>
+<p>Message from Child: {{ childMessage }}</p>
+
+<router-outlet />
